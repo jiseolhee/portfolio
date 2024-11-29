@@ -1,0 +1,126 @@
+@charset "utf-8";
+@media screen and (max-width:1296px) {
+  .container{
+    width: 100%;
+  }
+  .f_container{
+    width: 100%;
+  }
+
+  
+}
+
+@media screen and (max-width:1279px){
+  .container{
+    width: 95%;
+  }
+  .f_container{
+    width: 95%;
+  }
+  .exhibition{
+    overflow: hidden;
+  }
+  .exhibition_info{
+    height: 537px;
+    flex-wrap: nowrap;
+  }
+  .e_box5,.e_box6,.e_box7,.e_box8{ display: none;}
+
+  .monthly_info{
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0 auto;
+    /* align-content: center; */
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .monthly_info .monthly_big{
+    height: 880px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .container{
+    width: 90%;
+  }
+  .f_container{
+    width: 90%;
+  }
+
+  .main_visual ul li.slide1{
+    background-image: url(../img/slide_1024_1.png);
+  }
+  .main_visual ul li.slide2{
+    background-image: url(../img/slide_1024_2.png);
+  }
+
+  .card2,.card3{
+    margin-bottom: 20px;
+  }
+
+  ul.interview_info{}
+  ul.interview_info li{
+    padding: 55px 44px;
+    width: 866px;
+    height: 366px;
+  }
+  ul.interview_info li .i_box{
+    width: 786px;
+  }
+  ul.interview_info li img{ width: 255px; height: 255px;}
+  ul.interview_info li .interview_text{
+    width: 491px;
+    height: 255px;
+  }
+  ul.interview_info li .interview_text p {
+    height: 58px;
+    overflow: hidden;
+  }
+
+
+  footer .footer_top{
+    flex-wrap: wrap;
+  }
+  footer .footer_top ul.f_menu{
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  footer .footer_top .f_right{
+    margin: 0 auto;
+  }
+   
+  footer .footer_top .f_right .f_logo{
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width:360px){
+  .tit{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .tit h2{font-size: 40px; line-height: 50px; margin-bottom: 20px;}
+
+  .e_box3,.e_box4{display: none; margin-right: 20px;}
+  .main_visual{
+    height: 660px;
+  }
+  .main_visual ul li.slide1{
+    background-image: url(../img/slide1_360.png);
+  }
+  .main_visual ul li.slide2{
+    background-image: url(../img/slide2_360.png);
+  }
+  .swiper-button-next{display: none;}
+  .swiper-button-prev{display: none;}
+
+  .monthly_big{display: none;}
+  .card4,.card5{display: none;}
+  .footer_top ul.f_menu {display: none;}
+}
