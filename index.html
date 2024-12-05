@@ -18,11 +18,9 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script><!-- 프리텐다드 한글 -->
-
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="icon" href="images/favicon_192.png" sizes="192x192">
-
+    
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -37,11 +35,12 @@
 
 <body>
     <div class="wrap">
+        <div class="custom_cursor"></div>
         <header>
             <nav>
                 <ul class="gnb">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">More work</a></li>
+                    <li><a href="sub.html">More work</a></li>
                     <li><a href="#con3">About me</a></li>
                     <li><a href="#con4">contact</a></li>
                 </ul>
@@ -58,6 +57,8 @@
             <h2>
                 SERENEE<br>DESIGN<br>PORTFOLIO
             </h2>
+
+            <p>Seolhee’s UX UI Design</p>
 
         </main>
         <section id="main_box_all">
@@ -95,7 +96,7 @@
                                 more</a>
                         </div>
                     </li>
-                    <li class="con2_2">
+                    <li class="con2_2 maswis">
                         <h3>
                             Maswis
                         </h3>
@@ -150,10 +151,10 @@
                 </ul>
                 <div class="img_box">
                     <img src="img/box1.png" alt="동네서점" >
-                    <img src="img/box1.png" alt="">
+                    <img src="img/box1.png" alt="" class="maswis">
                     <img src="img/box2.png" alt="스몰리">
                     <img src="img/box3.png" alt="성원애드피아">
-                    <img src="img/box1.png" alt="">
+                    <img src="img/box5.png" alt="국립극장">
                 </div>
             </div>
         </section>
@@ -207,7 +208,9 @@
         <section id="con4">
             <div class="big_tit container">
                 <h2>contact</h2>
-                <p>guribellta@gmail.com</p>
+                <p> <a href="mailto: guribellta@gmail.com" 
+                    title="contact">guribellta@gmail.com</a></p>
+                <!-- <p>guribellta@gmail.com</p> -->
             </div>
             <img src="img/bg_3.png" alt="bg3" class="p3">
         </section>

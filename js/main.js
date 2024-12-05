@@ -2,6 +2,12 @@ $(function () {
   // Splitting.js로 텍스트를 애니메이션 효과 주기
   Splitting();
 
+  const cursor = document.querySelector('.custom_cursor');
+  document.addEventListener('mousemove',(e)=>{
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+  })
+
 
   $('#con1').on('mousemove', function (e) {
     let posX = e.pageX;
