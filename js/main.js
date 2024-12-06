@@ -30,6 +30,23 @@ $(function () {
     $('#con2 .img_box img').removeClass('on')
   })
 
+  /* 마우스 휠 이벤트 */
+  $('.wrap section').on('wheel', function (e) {
+    let nav;
+    if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+      nav = $(this).prev();
+    } else {
+      nav = $(this).next();
+    }
+
+    if (nav.length) {
+      let moveTop = nav.offset().top;
+      $('html,body').stop().animate({
+        scrollTop: moveTop
+      }, 300,'easeOutBounce');
+    }
+  });
+
   $('#con4').on('mousemove', function (e) {
     let posX = e.pageX;
     let posY = e.pageY;
@@ -40,4 +57,5 @@ $(function () {
     });
     
   });
+  AOS.init();
 });

@@ -29,7 +29,7 @@
 }
 
 
-main.main_visual .big_img {
+section.main_visual .big_img {
     padding-top: 284px;
     padding-left: 380px;
     position: absolute;
@@ -53,7 +53,7 @@ main.main_visual .big_img {
 }
 
 
-main.main_visual h2 {
+section.main_visual h2 {
     color: var(--white, #FFF);
     text-shadow: -0.5px 0px var(--black-color), 0px 0.5px var(--black-color), 0.5px 0px var(--black-color), 0px -0.5px var(--black-color);
     font-family: var(--en-h-font);
@@ -64,7 +64,7 @@ main.main_visual h2 {
     margin-top: 161px;
     z-index: 9;
 }
-main.main_visual p {
+section.main_visual p {
     padding-top: 50px;
     color: var(--main-bg-color);
     font-family: var(--en-p-font);
@@ -257,9 +257,7 @@ main.main_visual p {
 .maswis{
     display: none;
 }
-.con2_5 {
-    /* display: none; */
-}
+
 
 #con3 {
     width: 100%;
